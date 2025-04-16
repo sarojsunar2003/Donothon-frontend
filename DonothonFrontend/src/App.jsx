@@ -17,9 +17,10 @@ import { Volunteer } from "./Common/volunteer"
 import { Sidebar } from "./Components/Volunteer/Sidebar"
 import { Requests } from "./Components/Volunteer/Requests"
 import { AcceptedReq } from "./Components/Volunteer/AcceptedReq"
-import { Dashboard } from "./Components/NGO/Dashboard"
 import { ForgetPassword } from "./Common/ForgetPassword"
 import { ResetPassword } from "./Common/ResetPassword"
+import DonationBarChart from "./Common/Dashboard"
+
 
 // import { PastRequest } from "./Components/NGO/PastRequests"
 
@@ -53,6 +54,7 @@ function App() {
         <Route path="/signupv" element={<Volunteer />}></Route>
         <Route path="/forgetpassword" element={<ForgetPassword/>}/>
         <Route path="/resetpassword/:token" element={<ResetPassword/>}/>
+        <Route path="/Dashboard" element={<DonationBarChart/>}/>
 
         {/* <Route path="" element={<PrivateRoutes />}> */}
 
@@ -67,7 +69,7 @@ function App() {
           <Route path='pastrequests' element={<PastRequests />} />
         </Route>
 
-        <Route path='/Dashboard' element={<Dashboard />} />
+       
 
         <Route path='/v' element={<Sidebar />}>
           <Route index element={<Requests/>} />

@@ -52,6 +52,21 @@ export const ResetPassword = () => {
                         }}
                     />
                 </div>
+
+                <div>
+                    <label style={{ fontWeight: "bold" }}> Confirm New Password</label>
+                    <input 
+                        type='password' 
+                        {...register("password", { required: true })} 
+                        style={{
+                            width: "100%",
+                            padding: "8px",
+                            marginTop: "5px",
+                            border: "1px solid #ccc",
+                            borderRadius: "5px"
+                        }}
+                    />
+                </div>
                 <div>
                     <input 
                         type='submit' 
